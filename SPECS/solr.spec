@@ -2,12 +2,10 @@
 # - how to add to the trusted service of the firewall?
 
 %define __os_install_post \ /usr/lib/rpm/brp-compress \ %{!?__debug_package:/usr/lib/rpm/brp-strip %{__strip}} \ /usr/lib/rpm/brp-strip-static-archive %{__strip} \ /usr/lib/rpm/brp-strip-comment-note %{__strip} %{__objdump} \ %{nil}
-%define org cn
-#%define workdir %{_var}/lib/solr
-%define workdir /cn/runtime/solr
+%define workdir %{_var}/lib/solr
 %define start_script_path /usr/lib/systemd/system/solr.service
 
-Name:           %{org}-solr
+Name:           solr
 Version:        %{ver}
 Release:        %{rel}
 Summary:        Apache Search Server
