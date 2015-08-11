@@ -9,7 +9,16 @@ This work is based off of the build process of
 ## Usage
 
 * Download the tarball for Apache Solr and place it in the `SOURCES` directory. 
+```
+cd solr-rpm/SOURCES
+wget http://ftp.tsukuba.wide.ad.jp/software/apache/lucene/solr/5.2.1/solr-5.2.1.tgz
+```
+
 * Execute the build script with the version number of Solr as a parameter.
+```
+bash build.sh 5.2.1 0.el7
+```
+
 
 ## Bugs
 
